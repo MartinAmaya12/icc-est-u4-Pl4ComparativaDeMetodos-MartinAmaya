@@ -26,7 +26,14 @@ public class SortPersonaMethods {
         }
     }
 
-    private int particionar(Persona[] personas, int inicio, int fin) {
+  private int particionar(Persona[] personas, int inicio, int fin) {
+        
+        // --- SOLUCIÓN AL STACKOVERFLOW ---
+        // Elegimos el elemento del medio y lo intercambiamos con el último.
+        int medio = inicio + (fin - inicio) / 2;
+        intercambiar(personas, medio, fin);
+        // ---------------------------------
+
         Persona pivote = personas[fin];
         int i = inicio - 1;
 

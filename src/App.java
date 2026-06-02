@@ -19,7 +19,6 @@ public class App {
             
             Persona[] baseDesordenado = generarPersonas(size);
             
-            // Copias independientes para el Escenario 1
             Persona[] copiaInsercionE1 = baseDesordenado.clone();
             Persona[] copiaQuickSortE1 = baseDesordenado.clone();
 
